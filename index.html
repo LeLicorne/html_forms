@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML forms</title>
+</head>
+<body>
+    <form action="form_sub.html" target="_blank" novalidate>
+        <fieldset>
+            <legend>Les Différents Input d'un Form</legend>
+            <div class="textform">
+                <label for="textf">Text input</label>
+                <input type="text" id="textf" name="textf" value="" placeholder="Text" autofocus>
+            </div>
+            <div class="radioform">
+                <label for="radioform">Radio input</label>
+                <div>
+                    <input type="radio" id="radiof1" name="radiof">
+                    <input type="radio" id="radiof2" name="radiof">
+                </div>
+                
+            </div>
+            <div class="checkboxform">
+                <label for="checkboxform">CheckBox input</label>
+                <div>
+                    <input type="checkbox" id="checkboxf1" name="checkboxf">
+                    <input type="checkbox" id="checkboxf2" name="checkboxf">                
+                </div>
+
+            </div>
+            <div class="buttonform">
+                <label for="buttonform">Button input</label>
+                <div>
+                    <input type="button" id="buttonf1" name="buttonf" onclick="alert('Nice ASS')">
+                    <input type="button" id="buttonf2" name="buttonf">
+                </div>
+            </div>
+            <div class="selectform">
+                <label for="selectf">Select form</label>
+                <div>
+                    <select name="selectf" id="selectf">
+                        <option value="koenigsegg">koenigsegg</option>
+                        <option value="lamborghini">lamborghini</option>
+                        <option value="toyota">toyota</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="selectf" id="selectf" size="3">
+                        <option value="koenigsegg">koenigsegg</option>
+                        <option value="lamborghini">lamborghini</option>
+                        <option value="toyota">toyota</option>
+                        <option value="koenigsegg">koenigsegg</option>
+                        <option value="lamborghini">lamborghini</option>
+                        <option value="toyota">toyota</option>
+                    </select>
+                </div>
+            </div>
+            <div class="listform">
+                <label for="browsers">Datalist Form</label>
+                <input list="browsers">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+            </div>
+            <div class="rangeform">
+                <label for="rangef">Range form</label>
+                <input type="range" id="rangef" name="rangef" value="50">
+            </div>
+            <div class="colorform">
+                <label for="colorf"></label>
+                <input type="color" name="colorf">
+            </div>
+            <div class="imageform">
+                <label for="imagef">Image form</label>
+                <input type="image" name="imagef">
+            </div>
+            <div class="passwordform">
+                <label for="passwordf">Password form</label>
+                <input type="password" name="passwordf" required>
+            </div>
+            <div class="dateform">
+                <label for="datef">Date form</label>
+                <input type="date" id="datef" name="datef" min="2004-10-26" max="">
+            </div>
+            <div class="numberform">
+                <label for="numberf">Number form</label>
+                <input type="number" id="numberf" name="numberf" min="2" max="1024">
+            </div>
+            <div class="searchform">
+                <label for="searchf">Search form</label>
+                <input type="search" id="searchf" name="searchf">
+            </div>
+            <div class="telform">
+                <label for="telf">Tel form</label>
+                <input type="tel" id="telf" name="telf" placeholder="06 66 77 88 99" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" maxlength="14">
+            </div>
+            <div class="fileform">
+                <label for="filef">Select files form</label>
+                <input type="file" id="filef" name="filef" multiple>
+            </div>
+            <div class="resetform">
+                <label for="resetf">Reset form</label>
+                <input type="reset" name="resetf" id="resetf">
+            </div>
+            <div class="submitform">
+                <label for="submitf">Submit input</label>
+                <input type="submit" id="submitf" name="submitf">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
