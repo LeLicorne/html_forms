@@ -11,19 +11,28 @@
     <form action="form_sub.html" target="_blank" novalidate>
         <fieldset>
             <legend>Les Différents Input d'un Form</legend>
-            <div class="textform">
+            <!--
+
+            -->
+            <div class="textform container">
                 <label for="textf">Text input</label>
                 <input type="text" id="textf" name="textf" value="" placeholder="Text" autofocus>
             </div>
-            <div class="radioform">
+            <!--
+
+            -->
+            <div class="radioform container">
                 <label for="radioform">Radio input</label>
                 <div>
-                    <input type="radio" id="radiof1" name="radiof">
+                    <input type="radio" id="radiof1" name="radiof" size="50">
                     <input type="radio" id="radiof2" name="radiof">
                 </div>
                 
             </div>
-            <div class="checkboxform">
+            <!--
+
+            -->
+            <div class="checkboxform container">
                 <label for="checkboxform">CheckBox input</label>
                 <div>
                     <input type="checkbox" id="checkboxf1" name="checkboxf">
@@ -31,14 +40,20 @@
                 </div>
 
             </div>
-            <div class="buttonform">
+            <!--
+
+            -->
+            <div class="buttonform container">
                 <label for="buttonform">Button input</label>
                 <div>
                     <input type="button" id="buttonf1" name="buttonf" onclick="alert('Nice ASS')">
                     <input type="button" id="buttonf2" name="buttonf">
                 </div>
             </div>
-            <div class="selectform">
+            <!--
+
+            -->
+            <div class="selectform container">
                 <label for="selectf">Select form</label>
                 <div>
                     <select name="selectf" id="selectf">
@@ -58,7 +73,10 @@
                     </select>
                 </div>
             </div>
-            <div class="listform">
+            <!--
+
+            -->
+            <div class="listform container">
                 <label for="browsers">Datalist Form</label>
                 <input list="browsers">
                 <datalist id="browsers">
@@ -69,47 +87,80 @@
                     <option value="Safari">
                 </datalist>
             </div>
-            <div class="rangeform">
+            <!--
+
+            -->
+            <div class="rangeform container">
                 <label for="rangef">Range form</label>
                 <input type="range" id="rangef" name="rangef" value="50">
             </div>
-            <div class="colorform">
+            <!--
+
+            -->
+            <div class="colorform container">
                 <label for="colorf"></label>
                 <input type="color" name="colorf">
             </div>
-            <div class="imageform">
+            <!--
+
+            -->
+            <div class="imageform container">
                 <label for="imagef">Image form</label>
                 <input type="image" name="imagef">
             </div>
-            <div class="passwordform">
+            <!--
+
+            -->
+            <div class="passwordform container">
                 <label for="passwordf">Password form</label>
                 <input type="password" name="passwordf" required>
             </div>
-            <div class="dateform">
+            <!--
+
+            -->
+            <div class="dateform container">
                 <label for="datef">Date form</label>
                 <input type="date" id="datef" name="datef" min="2004-10-26" max="">
             </div>
-            <div class="numberform">
+            <!--
+
+            -->
+            <div class="numberform container">
                 <label for="numberf">Number form</label>
                 <input type="number" id="numberf" name="numberf" min="2" max="1024">
             </div>
-            <div class="searchform">
+            <!--
+
+            -->
+            <div class="searchform container">
                 <label for="searchf">Search form</label>
                 <input type="search" id="searchf" name="searchf">
             </div>
-            <div class="telform">
+            <!--
+
+            -->
+            <div class="telform container">
                 <label for="telf">Tel form</label>
                 <input type="tel" id="telf" name="telf" placeholder="06 66 77 88 99" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" maxlength="14">
             </div>
-            <div class="fileform">
+            <!--
+
+            -->
+            <div class="fileform container">
                 <label for="filef">Select files form</label>
                 <input type="file" id="filef" name="filef" multiple>
             </div>
-            <div class="resetform">
+            <!--
+
+            -->
+            <div class="resetform container">
                 <label for="resetf">Reset form</label>
                 <input type="reset" name="resetf" id="resetf">
             </div>
-            <div class="submitform">
+            <!--
+
+            -->
+            <div class="submitform container">
                 <label for="submitf">Submit input</label>
                 <input type="submit" id="submitf" name="submitf">
             </div>

@@ -1,3 +1,7 @@
+:root{
+    --heigth-width: 50px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,10 +12,51 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+input[type=radio] {
+    height: var(--heigth-width);
+    width: var(--heigth-width);
+    ;
+}
+
+input[type=checkbox] {
+    height: var(--heigth-width);
+    width: var(--heigth-width);
+    ;
+}
+
+
 input::placeholder{
     color: black;
 }
 
 body{
     background-color: hsl(0, 0%, 10%);
+    height: 100vh;
+    width: 100%;
+}
+
+form{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+form fieldset{
+    background-color: hsl(0, 0%, 15%);
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+form fieldset .container{
+    height: calc(100% / 3);
+    width: calc(100% / 3);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
 }
