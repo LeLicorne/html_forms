@@ -1,5 +1,5 @@
 :root{
-    --heigth-width: 50px;
+    --heigth-width: 30px;
 }
 
 *{
@@ -15,18 +15,27 @@
 input[type=radio] {
     height: var(--heigth-width);
     width: var(--heigth-width);
-    ;
 }
 
 input[type=checkbox] {
     height: var(--heigth-width);
     width: var(--heigth-width);
-    ;
 }
 
+input[type=button] {
+    height: var(--heigth-width);
+    width: var(--heigth-width);
+}
 
-input::placeholder{
+input, option, option::placeholder, select{
     color: black;
+    background-color: #eeeeee;
+}
+
+datalist option{
+    color: black;
+    background-color: aqua;
+    height: 100px;
 }
 
 body{
@@ -36,7 +45,7 @@ body{
 }
 
 form{
-    height: 100%;
+    height: 200vh;
     width: 100%;
     padding: 10px;
 }
@@ -51,7 +60,7 @@ form fieldset{
 }
 
 form fieldset .container{
-    height: calc(100% / 3);
+    height: calc(100% / 6);
     width: calc(100% / 3);
     padding: 10px;
     display: flex;
